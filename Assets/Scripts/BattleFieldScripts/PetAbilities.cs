@@ -40,6 +40,7 @@ public class PetAbilities : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha2) && ultCooldownTimer <= 0f && AreAllEnemiesDead())
         {
+            Debug.Log("All Enemies Dead");
             StartCoroutine(UseUltimate());
         }
 
@@ -49,11 +50,13 @@ public class PetAbilities : MonoBehaviour
     GameObject GetTargetEnemy()
     {
 
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] regularEnemies = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] bossEnemies = GameObject.FindGameObjectsWithTag("BossEnemy");
+
         GameObject nearest = null;
         float minDist = Mathf.Infinity;
 
-        foreach (GameObject enemy in enemies)
+        foreach (GameObject enemy in regularEnemies)
         {
             float dist = Vector2.Distance(transform.position, enemy.transform.position);
             if (dist < minDist)
@@ -63,8 +66,19 @@ public class PetAbilities : MonoBehaviour
             }
         }
 
+        foreach (GameObject boss in bossEnemies)
+        {
+            float dist = Vector2.Distance(transform.position, boss.transform.position);
+            if (dist < minDist)
+            {
+                minDist = dist;
+                nearest = boss;
+            }
+        }
+
         return nearest;
     }
+
 
 
     void UseLineFire()
@@ -75,19 +89,17 @@ public class PetAbilities : MonoBehaviour
         Vector2 direction = (target.transform.position - transform.position).normalized;
         Vector2 origin = transform.position;
 
-        RaycastHit2D[] hits = Physics2D.RaycastAll(origin, direction, lineFireRange, enemyLayers);
-        foreach (RaycastHit2D hit in hits)
-        {
-            if (hit.collider.CompareTag("Enemy"))
-            {
-                EnemyHealth eh = hit.collider.GetComponent<EnemyHealth>();
-                if (eh != null) eh.TakeDamage(50);
-            }
-        }
-
         if (lineFireEffect)
         {
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            Quaternion rotation = Quaternion.Euler(0, 0, angle);
+            
             GameObject fire = Instantiate(lineFireEffect, origin, Quaternion.LookRotation(Vector3.forward, direction));
+            Ability1Script line = fire.GetComponent<Ability1Script>();
+            if (line != null)
+            {
+                line.SetDirection(direction);
+            }
             Destroy(fire, 3);
         }
 
@@ -99,7 +111,7 @@ public class PetAbilities : MonoBehaviour
     {
         GameObject target = GetTargetEnemy();
         if (target == null) yield break;
-
+        Debug.Log(target);
         Vector3 pos = target.transform.position;
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(pos, ultimateRadius);

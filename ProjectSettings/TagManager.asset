@@ -7,6 +7,7 @@ TagManager:
   - Food
   - Brush
   - Enemy
+  - BossEnemy
   layers:
   - Default
   - TransparentFX
