@@ -11,12 +11,15 @@ public class PetInteraction : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.gameObject.name);
         if (collision.CompareTag("Food"))
         {
+            Destroy(collision.gameObject);
             ReactToFood();
         }
         else if (collision.CompareTag("Brush"))
         {
+            Destroy(collision.gameObject);
             ReactToBrush();
         }
     }
