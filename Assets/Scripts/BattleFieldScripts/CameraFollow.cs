@@ -2,9 +2,22 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target;          // The object the camera will follow
-    public float smoothSpeed = 0.125f; // Smoothing factor
-    public Vector3 offset;            // Offset from the target
+    public Transform target;
+    public float smoothSpeed = 0.125f;
+    public Vector3 offset;
+
+    public Vector2 minBounds; // Bottom-left corner of the camera bounds
+    public Vector2 maxBounds; // Top-right corner of the camera bounds
+
+    private float camHalfHeight;
+    private float camHalfWidth;
+
+    void Start()
+    {
+        Camera cam = Camera.main;
+        camHalfHeight = cam.orthographicSize;
+        camHalfWidth = cam.aspect * camHalfHeight;
+    }
 
     void LateUpdate()
     {
@@ -12,6 +25,10 @@ public class CameraFollow : MonoBehaviour
 
         Vector3 desiredPosition = target.position + offset;
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-        transform.position = new Vector3(smoothedPosition.x, smoothedPosition.y, transform.position.z);
+
+        float clampedX = Mathf.Clamp(smoothedPosition.x, minBounds.x + camHalfWidth, maxBounds.x - camHalfWidth);
+        float clampedY = Mathf.Clamp(smoothedPosition.y, minBounds.y + camHalfHeight, maxBounds.y - camHalfHeight);
+
+        transform.position = new Vector3(clampedX, clampedY, transform.position.z);
     }
 }
