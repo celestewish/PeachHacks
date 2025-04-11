@@ -46,6 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainMenuUI: {fileID: 0}
   Credits: {fileID: 5953325220750931851, guid: fb91c53fdcb89d040a0ae8bda99f7b6e, type: 3}
-  BattleFeildUI: {fileID: 0}
-  CareSceneUI: {fileID: 0}
-  CreditsUI: {fileID: 0}
+  CreditsUI: {fileID: 5953325220750931851, guid: fb91c53fdcb89d040a0ae8bda99f7b6e, type: 3}

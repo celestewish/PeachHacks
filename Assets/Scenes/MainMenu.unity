@@ -467,6 +467,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1279501532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3000133599931163849, guid: 869fc22351ee6ea4a8f5a56131a40a04, type: 3}
+  m_PrefabInstance: {fileID: 1927327969814126412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1927327969814126412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -563,6 +568,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3000133599931163849, guid: 869fc22351ee6ea4a8f5a56131a40a04, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3888726155562346015, guid: 869fc22351ee6ea4a8f5a56131a40a04, type: 3}
       propertyPath: m_SizeDelta.x
       value: 539.5864
@@ -593,11 +602,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4221702890582351921, guid: 869fc22351ee6ea4a8f5a56131a40a04, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -116
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4221702890582351921, guid: 869fc22351ee6ea4a8f5a56131a40a04, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42.6
+      value: -87
       objectReference: {fileID: 0}
     - target: {fileID: 4259683391703299843, guid: 869fc22351ee6ea4a8f5a56131a40a04, type: 3}
       propertyPath: m_Color.b
@@ -741,6 +750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3189797479680388401, guid: 805b6277e9c551b43aba45a7b0e70eab, type: 3}
+      propertyPath: CreditsUI
+      value: 
+      objectReference: {fileID: 1279501532}
     - target: {fileID: 3189797479680388401, guid: 805b6277e9c551b43aba45a7b0e70eab, type: 3}
       propertyPath: MainMenuUI
       value: 

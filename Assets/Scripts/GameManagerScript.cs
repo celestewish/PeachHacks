@@ -5,8 +5,8 @@ public class GameManagerScript : MonoBehaviour
 {
     public GameObject MainMenuUI;
     public GameObject Credits;
-    public GameObject BattleFeildUI;
-    public GameObject CareSceneUI;
+    //public GameObject BattleFeildUI;
+    //public GameObject CareSceneUI;
     public GameObject CreditsUI;
 
     public void Awake()
@@ -26,20 +26,20 @@ public class GameManagerScript : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("CareScene");
-        CareSceneUI.SetActive(true);
+        //CareSceneUI.SetActive(true);
         
     }
 
     public void BattleScene()
     {
         SceneManager.LoadScene("BattleField");
-        BattleFeildUI.SetActive(true);
+        //BattleFeildUI.SetActive(true);
     }
     public void CareScene()
     {
         SceneManager.LoadScene("CareScene");
 
-        CareSceneUI.SetActive(true);
+        //CareSceneUI.SetActive(true);
     }
 
     public void CreditsScene()
