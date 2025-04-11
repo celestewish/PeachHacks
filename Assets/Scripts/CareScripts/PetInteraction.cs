@@ -3,6 +3,8 @@ using UnityEngine;
 public class PetInteraction : MonoBehaviour
 {
     private Animator animator;
+    public AudioClip foodSound;
+    public AudioClip brushSound;
 
     private void Start()
     {
@@ -27,12 +29,14 @@ public class PetInteraction : MonoBehaviour
     void ReactToFood()
     {
         Debug.Log("Pet found food!");
+        AudioSource.PlayClipAtPoint(foodSound, transform.position);
         //animator.SetTrigger("ReactFood");
     }
 
     void ReactToBrush()
     {
         Debug.Log("Pet is being brushed!");
+        AudioSource.PlayClipAtPoint(brushSound, transform.position);
         //animator.SetTrigger("ReactBrush");
     }
 }

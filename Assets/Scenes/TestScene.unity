@@ -1241,6 +1241,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad56143cf4e3ca4a8864859b08ada99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodSound: {fileID: 8300000, guid: de14d244c362675458a3a60263aa48dd, type: 3}
+  brushSound: {fileID: 8300000, guid: 288acf05179d66b4eaff95e6eae7b608, type: 3}
 --- !u!50 &1145273624
 Rigidbody2D:
   serializedVersion: 5
