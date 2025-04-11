@@ -4,10 +4,10 @@ using UnityEngine.SceneManagement;
 public class GameManagerScript : MonoBehaviour
 {
     public GameObject MainMenuUI;
-    public GameObject Credits;
-    public GameObject BattleFeildUI;
-    public GameObject CareSceneUI;
-    public GameObject CreditsUI;
+    //public GameObject Credits;
+    //public GameObject BattleFeildUI;
+    //public GameObject CareSceneUI;
+    
 
     public void Awake()
     {
@@ -20,42 +20,41 @@ public class GameManagerScript : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
-        MainMenuUI.SetActive(true);
+        //MainMenuUI.SetActive(true);
     }
 
     public void StartGame()
     {
-        SceneManager.LoadScene("CareScene");
-        CareSceneUI.SetActive(true);
+        CareScene();
         
     }
 
     public void BattleScene()
     {
         SceneManager.LoadScene("BattleField");
-        BattleFeildUI.SetActive(true);
+        //BattleFeildUI.SetActive(true);
     }
     public void CareScene()
     {
         SceneManager.LoadScene("CareScene");
 
-        CareSceneUI.SetActive(true);
+        //CareSceneUI.SetActive(true);
     }
 
     public void CreditsScene()
     {
         SceneManager.LoadScene("Credits");
-        CreditsUI.SetActive(true);
+        //Credits.SetActive(true);
     }
     public void OpenCreditsScene() //for buttons
     {
-        SceneManager.LoadScene("Credits");
-        CreditsUI.SetActive(true);
+        CreditsScene();
     }
     public void CloseCreditsScene()
     {
-        SceneManager.LoadScene("MainMenu"); //for buttons
-        CreditsUI.SetActive(true);
+        MainMenu(); //for buttons
+        //Credits.SetActive(false);
+       
     }
 
 }
