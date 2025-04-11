@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      skelly_0: -1011880802010920795
+      skelly_1: -43999314859511557
+      skelly_2: 6994735492953745287
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

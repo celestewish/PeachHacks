@@ -13,6 +13,11 @@ public class PetController : MonoBehaviour
 
     private bool isAttacking = false;
 
+    void Start()
+    {
+        targetPosition = transform.position;
+    }
+
     void Update()
     {
         HandleInput();
