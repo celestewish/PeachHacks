@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 572966063}
   - component: {fileID: 572966064}
   m_Layer: 0
-  m_Name: Triangle
+  m_Name: DecRolled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1102,7 +1102,7 @@ GameObject:
   - component: {fileID: 1145273623}
   - component: {fileID: 1145273624}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Pet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
