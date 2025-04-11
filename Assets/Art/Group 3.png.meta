@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 70744ce3d9aa9e040a98d9bf2d50f30c
+guid: dc6f07b989e6cc848a9034ba6ebf10af
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5400605498865351761
-    second: fatty_0
-  - first:
-      213: -2748571654616616394
-    second: fatty_1
-  - first:
-      213: -2766388996291550384
-    second: fatty_2
-  - first:
-      213: 491633051981321742
-    second: fatty_3
+      213: -556663896244417668
+    second: Group 3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,17 +46,17 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.4614284, y: 0.5766792}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 1226, y: 987, z: 1476, w: 542}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -109,107 +100,33 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fatty_0
+      name: Group 3_0
       rect:
         serializedVersion: 2
-        x: 189
-        y: 1013
-        width: 760
-        height: 901
+        x: 0
+        y: 0
+        width: 101
+        height: 112
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15cf3eb661ec2fa40800000000000000
-      internalID: 5400605498865351761
+      spriteID: c7b011db2255648f0800000000000000
+      internalID: -556663896244417668
       vertices: []
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: fatty_1
-      rect:
-        serializedVersion: 2
-        x: 1246
-        y: 991
-        width: 763
-        height: 901
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6327ed684ac1bd9d0800000000000000
-      internalID: -2748571654616616394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fatty_2
-      rect:
-        serializedVersion: 2
-        x: 2259
-        y: 966
-        width: 979
-        height: 901
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0532e756ddfcb99d0800000000000000
-      internalID: -2766388996291550384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fatty_3
-      rect:
-        serializedVersion: 2
-        x: 1711
-        y: 26
-        width: 971
-        height: 936
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e06103fe7a1a2d600800000000000000
-      internalID: 491633051981321742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    outline:
-    - - {x: -518, y: 372}
-      - {x: -525, y: 154}
-      - {x: -508, y: -133}
-      - {x: -384, y: -248}
-      - {x: -36, y: -284}
-      - {x: 273, y: -145}
-      - {x: 258, y: 642}
-      - {x: -428, y: 690}
+    outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: 
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -217,11 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      fatty_0: 5400605498865351761
-      fatty_1: -2748571654616616394
-      fatty_2: -2766388996291550384
-      fatty_3: 491633051981321742
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

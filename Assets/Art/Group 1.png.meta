@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 12f9b58feb5467547a822965f7a68014
+guid: 12bf836c529b16d42bdac54fcbb15c05
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5400605498865351761
-    second: fatty_0
-  - first:
-      213: -2748571654616616394
-    second: fatty_1
-  - first:
-      213: -2766388996291550384
-    second: fatty_2
-  - first:
-      213: 491633051981321742
-    second: fatty_3
+      213: 2641698482785147981
+    second: Group 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fatty_2
+      name: Group 1_0
       rect:
         serializedVersion: 2
-        x: 2259
-        y: 966
-        width: 979
-        height: 901
+        x: 0
+        y: 0
+        width: 132
+        height: 95
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0532e756ddfcb99d0800000000000000
-      internalID: -2766388996291550384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fatty_3
-      rect:
-        serializedVersion: 2
-        x: 1711
-        y: 26
-        width: 971
-        height: 936
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e06103fe7a1a2d600800000000000000
-      internalID: 491633051981321742
+      spriteID: d4cd81616c239a420800000000000000
+      internalID: 2641698482785147981
       vertices: []
       indices: 
       edges: []
@@ -156,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d26650f5213f22f4580b761b6e1857c2
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -165,11 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      fatty_0: 5400605498865351761
-      fatty_1: -2748571654616616394
-      fatty_2: -2766388996291550384
-      fatty_3: 491633051981321742
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
