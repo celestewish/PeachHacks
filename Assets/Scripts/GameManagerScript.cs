@@ -1,17 +1,13 @@
-
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChanger : MonoBehaviour
+public class GameManagerScript : MonoBehaviour
 {
     public GameObject MainMenuUI;
     public GameObject Credits;
     public GameObject BattleFeildUI;
     public GameObject CareSceneUI;
+    public GameObject CreditsUI;
 
     public void Awake()
     {
@@ -29,19 +25,37 @@ public class SceneChanger : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Level1");
-        MainMenuUI.SetActive(true);
-
+        SceneManager.LoadScene("CareScene");
+        CareSceneUI.SetActive(true);
+        
     }
 
     public void BattleScene()
     {
-        SceneManager.LoadScene("BattleFeild");
+        SceneManager.LoadScene("BattleField");
         BattleFeildUI.SetActive(true);
     }
     public void CareScene()
     {
         SceneManager.LoadScene("CareScene");
+
         CareSceneUI.SetActive(true);
     }
+
+    public void CreditsScene()
+    {
+        SceneManager.LoadScene("Credits");
+        CreditsUI.SetActive(true);
+    }
+    public void OpenCreditsScene() //for buttons
+    {
+        SceneManager.LoadScene("Credits");
+        CreditsUI.SetActive(true);
+    }
+    public void CloseCreditsScene()
+    {
+        SceneManager.LoadScene("MainMenu"); //for buttons
+        CreditsUI.SetActive(true);
+    }
+
 }
