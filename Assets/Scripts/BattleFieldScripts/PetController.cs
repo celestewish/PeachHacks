@@ -49,7 +49,7 @@ public class PetController : MonoBehaviour
             mousePos.z = 0;
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-            if (hit.collider != null && hit.collider.CompareTag("Enemy"))
+            if (hit.collider != null && hit.collider.CompareTag("Enemy") || hit.collider != null && hit.collider.CompareTag("BossEnemy"))
             {
                 currentTargetEnemy = hit.collider.gameObject;
                 targetPosition = currentTargetEnemy.transform.position;

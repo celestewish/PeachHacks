@@ -127,7 +127,7 @@ public class PetAbilities : MonoBehaviour
         if (ultimateExplosionEffect)
         {
             GameObject fire = Instantiate(ultimateExplosionEffect, pos, Quaternion.identity);
-            Destroy(fire, 3);
+            Destroy(fire, 1);
         }
 
         StartCoroutine(ShakeCamera(screenShakeDuration, screenShakeMagnitude));

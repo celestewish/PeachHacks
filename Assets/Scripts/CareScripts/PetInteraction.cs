@@ -27,12 +27,12 @@ public class PetInteraction : MonoBehaviour
     void ReactToFood()
     {
         Debug.Log("Pet found food!");
-        animator.SetTrigger("ReactFood");
+        //animator.SetTrigger("ReactFood");
     }
 
     void ReactToBrush()
     {
         Debug.Log("Pet is being brushed!");
-        animator.SetTrigger("ReactBrush");
+        //animator.SetTrigger("ReactBrush");
     }
 }

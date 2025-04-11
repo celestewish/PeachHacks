@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0531e58a57bd18a4887dad368de7a734
+guid: ec9ac28a65bab7148a0a39d8eac2261d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 788390758475499060
-    second: mess-error-image2_0
+      213: 2003946917092175178
+    second: decrolled_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mess-error-image2_0
+      name: decrolled_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 435
-        height: 165
+        x: 346
+        y: 447
+        width: 915
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 436022fb73de0fa00800000000000000
-      internalID: 788390758475499060
+      spriteID: a4da40e8a137fcb10800000000000000
+      internalID: 2003946917092175178
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      mess-error-image2_0: 788390758475499060
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
