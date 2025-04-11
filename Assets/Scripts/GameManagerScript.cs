@@ -4,10 +4,10 @@ using UnityEngine.SceneManagement;
 public class GameManagerScript : MonoBehaviour
 {
     public GameObject MainMenuUI;
-    public GameObject Credits;
+    //public GameObject Credits;
     //public GameObject BattleFeildUI;
     //public GameObject CareSceneUI;
-    public GameObject CreditsUI;
+    
 
     public void Awake()
     {
@@ -20,13 +20,12 @@ public class GameManagerScript : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
-        MainMenuUI.SetActive(true);
+        //MainMenuUI.SetActive(true);
     }
 
     public void StartGame()
     {
-        SceneManager.LoadScene("CareScene");
-        //CareSceneUI.SetActive(true);
+        CareScene();
         
     }
 
@@ -45,17 +44,17 @@ public class GameManagerScript : MonoBehaviour
     public void CreditsScene()
     {
         SceneManager.LoadScene("Credits");
-        CreditsUI.SetActive(true);
+        //Credits.SetActive(true);
     }
     public void OpenCreditsScene() //for buttons
     {
-        SceneManager.LoadScene("Credits");
-        CreditsUI.SetActive(true);
+        CreditsScene();
     }
     public void CloseCreditsScene()
     {
-        SceneManager.LoadScene("MainMenu"); //for buttons
-        CreditsUI.SetActive(true);
+        MainMenu(); //for buttons
+        //Credits.SetActive(false);
+       
     }
 
 }
