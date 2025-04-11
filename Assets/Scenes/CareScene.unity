@@ -1351,12 +1351,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: e6f11dcba5f40c645bc9842fa5e8a634, type: 3}
+  m_Sprite: {fileID: 5400605498865351761, guid: e6f11dcba5f40c645bc9842fa5e8a634, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 35.079998, y: 24.802656}
+  m_Size: {x: 7.6, y: 9.010965}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1391,6 +1391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodSound: {fileID: 8300000, guid: de14d244c362675458a3a60263aa48dd, type: 3}
   brushSound: {fileID: 8300000, guid: 288acf05179d66b4eaff95e6eae7b608, type: 3}
+  rb: {fileID: 0}
 --- !u!50 &1145273624
 Rigidbody2D:
   serializedVersion: 5

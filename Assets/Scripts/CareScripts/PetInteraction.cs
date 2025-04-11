@@ -5,9 +5,11 @@ public class PetInteraction : MonoBehaviour
     private Animator animator;
     public AudioClip foodSound;
     public AudioClip brushSound;
+    public Rigidbody2D rb;
     private void Start()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()

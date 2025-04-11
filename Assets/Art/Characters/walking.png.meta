@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 12f9b58feb5467547a822965f7a68014
+guid: 00fd91340c7fef4459ead68dd69648c9
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -109,6 +109,50 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: fatty_0
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1013
+        width: 760
+        height: 901
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15cf3eb661ec2fa40800000000000000
+      internalID: 5400605498865351761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fatty_1
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 991
+        width: 763
+        height: 901
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6327ed684ac1bd9d0800000000000000
+      internalID: -2748571654616616394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: fatty_2
       rect:
         serializedVersion: 2
@@ -117,7 +161,7 @@ TextureImporter:
         width: 979
         height: 901
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -139,7 +183,7 @@ TextureImporter:
         width: 971
         height: 936
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d26650f5213f22f4580b761b6e1857c2
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
