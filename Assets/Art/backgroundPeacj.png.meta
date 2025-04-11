@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ec9ac28a65bab7148a0a39d8eac2261d
+guid: 3101dfb35f0c3c54cad20b4116c03610
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2003946917092175178
-    second: decrolled_0
+      213: -5420711533902870417
+    second: backgroundPeacj_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: decrolled_0
+      name: backgroundPeacj_0
       rect:
         serializedVersion: 2
-        x: 346
-        y: 447
-        width: 915
-        height: 352
+        x: 0
+        y: 0
+        width: 3508
+        height: 2480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4da40e8a137fcb10800000000000000
-      internalID: 2003946917092175178
+      spriteID: f684bdf7493c5c4b0800000000000000
+      internalID: -5420711533902870417
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      decrolled_0: 2003946917092175178
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
