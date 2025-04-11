@@ -7,6 +7,22 @@ public class GameManager : MonoBehaviour
 
     private bool hasActivated = false;
 
+    public AudioClip music;
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        // Play background music
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource != null && music != null)
+        {
+            audioSource.clip = music;
+            audioSource.loop = true;
+            audioSource.volume = 0.10f;
+            audioSource.Play();
+        }
+    }
+
     void Update()
     {
         if (hasActivated) return;
