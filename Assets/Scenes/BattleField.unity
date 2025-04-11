@@ -637,7 +637,7 @@ MonoBehaviour:
   smoothSpeed: 0.125
   offset: {x: 0, y: 0, z: 0}
   minBounds: {x: -7.5, y: -5.1}
-  maxBounds: {x: 8, y: 10}
+  maxBounds: {x: 8, y: 5}
 --- !u!1 &597804042
 GameObject:
   m_ObjectHideFlags: 0
