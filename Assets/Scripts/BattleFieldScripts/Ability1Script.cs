@@ -6,10 +6,12 @@ public class Ability1Script : MonoBehaviour
     public float lifetime = 2f;
     public int damage = 50;
     private Vector2 moveDirection;
+    public AudioClip hitSound;
 
     public void SetDirection(Vector2 dir)
     {
         moveDirection = dir.normalized;
+        AudioSource.PlayClipAtPoint(hitSound, transform.position);
         Destroy(gameObject, lifetime);
     }
 

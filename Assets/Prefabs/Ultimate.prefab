@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2689617552755473146}
   - component: {fileID: 8974179235424202611}
+  - component: {fileID: 7480144036824242015}
   m_Layer: 0
   m_Name: Ultimate
   m_TagString: Untagged
@@ -87,3 +88,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7480144036824242015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3528054646677185840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f3c9de8f1b72345b5b4589a3c05684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSound: {fileID: 8300000, guid: c59895d5c0783ac4dba494c8de032f74, type: 3}
